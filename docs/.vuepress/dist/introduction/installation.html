@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A Book of VuePress by VuePress | Installation</title>
+    <meta name="description" content="Exploring VuePress in easy words">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.dc7513a8.css" as="style"><link rel="preload" href="/assets/js/app.23d65a4c.js" as="script"><link rel="preload" href="/assets/js/5.3e32a4c3.js" as="script"><link rel="preload" href="/assets/js/8.5bdcd7c2.js" as="script"><link rel="prefetch" href="/assets/js/2.0a5ce835.js"><link rel="prefetch" href="/assets/js/0.eff315fb.js"><link rel="prefetch" href="/assets/js/1.ac924008.js"><link rel="prefetch" href="/assets/js/3.fd6f9969.js"><link rel="prefetch" href="/assets/js/4.8d631bc5.js"><link rel="prefetch" href="/assets/js/6.6c469570.js"><link rel="prefetch" href="/assets/js/7.760abcbe.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.dc7513a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      A Book of VuePress by VuePress
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link router-link-active">Installation</a></div><div class="nav-item"><a href="/tools/" class="nav-link">Tools</a></div><div class="nav-item"><a href="/tasks/" class="nav-link">Things We Can Do with VuePress</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link router-link-active">Installation</a></div><div class="nav-item"><a href="/tools/" class="nav-link">Tools</a></div><div class="nav-item"><a href="/tasks/" class="nav-link">Things We Can Do with VuePress</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Installation</span><!----></p><ul class="sidebar-group-items"><li><a href="/introduction/" class="sidebar-link">Installation</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Tools</span><!----></p><ul class="sidebar-group-items"><li><a href="/tools/" class="sidebar-link">Tools</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Things We Can Do with VuePress</span><!----></p><ul class="sidebar-group-items"><li><a href="/tasks/" class="sidebar-link">Things We Can Do with VuePress</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h1><p>To install VuePress you should have installed either npm or yarn.</p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>You should use yarn if you have webpack 3.x as a dependency. <br>
+To install VuePress using npm you must have Node.js &gt;= 8.</p></div><p></p><div class="table-of-contents"><ul><li><a href="#global-installation">Global Installation</a></li><li><a href="#local-installation">Local Installation</a></li></ul></div><p></p><h2 id="global-installation"><a href="#global-installation" aria-hidden="true" class="header-anchor">#</a> Global Installation</h2><p>To install VuePress globally run the following command</p><div class="language- extra-class"><pre class="language-text"><code>yarn global add vuepress
+</code></pre></div><p>OR</p><div class="language- extra-class"><pre class="language-text"><code>npm install -g vuepress
+</code></pre></div><p>Next we will create a markdown file as we know that when we write documentation, we usually write it in a <strong>README.md </strong> file.</p><div class="language- extra-class"><pre class="language-text"><code>echo '# Hello World' &gt; README.md
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>Here # is equivalent to h1 tag in HTML, It is related to markdown file syntax</p></div><p>Now to run project and preview it in the browser we can write</p><div class="language- extra-class"><pre class="language-text"><code>vuepress dev
+</code></pre></div><p>to build the  project we need to run</p><div class="language- extra-class"><pre class="language-text"><code>vuepress build
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>Your project will be displayed in localhost/8080 port and after building your project, docs will be available in <strong>.vuepress/dist </strong> folder</p></div><h2 id="local-installation"><a href="#local-installation" aria-hidden="true" class="header-anchor">#</a> Local Installation</h2><p>In an existing project to keep your project documentation inside, the following rules must be followed. We personally suggest to follow these steps as these would be easy to understand and handled by any beginners during the development of any project.</p><p>Create a project directory</p><div class="language- extra-class"><pre class="language-text"><code>mkdir vuepress_project
+</code></pre></div><p>Then go into that directory</p><div class="language- extra-class"><pre class="language-text"><code>cd vuepress_project
+</code></pre></div><p>Install VuePrss wih <strong>yarn</strong></p><div class="language- extra-class"><pre class="language-text"><code>yarn add vuepress
+</code></pre></div><p>Or You can install it with <strong> npm </strong></p><div class="language- extra-class"><pre class="language-text"><code>npm install vuepress --save
+</code></pre></div><p>Now create a folder in your root named docs and run the following</p><div class="language- extra-class"><pre class="language-text"><code>echo '# Hello VuePress' &gt; README.md
+</code></pre></div><p>This will create a README.md file in the docs folder <strong>docs/README.md</strong></p><p>Now we need to add scripts to <strong>package.json</strong> file. If you have <strong>package-lock.json</strong> then you can create <strong> package.json </strong> file</p><div class="language- extra-class"><pre class="language-text"><code>{
+     &quot;scripts&quot;: {
+       &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,
+       &quot;docs:build&quot;: &quot;vuepress build docs&quot;
+     }
+   }
+</code></pre></div><p>now you can run the following command to run and build</p><div class="language- extra-class"><pre class="language-text"><code>npm run docs:dev
+#generate files using
+npm run docs:build
+</code></pre></div><p>There you go,You can now work with VuePress. 🎉 🎉 🎉
+<br></p><p><div class="modal"><button></button></div></p></div><!----><!----></div></div></div>
+    <script src="/assets/js/5.3e32a4c3.js" defer></script><script src="/assets/js/8.5bdcd7c2.js" defer></script><script src="/assets/js/app.23d65a4c.js" defer></script>
+  </body>
+</html>

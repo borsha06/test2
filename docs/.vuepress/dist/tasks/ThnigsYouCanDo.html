@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A Book of VuePress by VuePress | Things We Can Do with VuePress</title>
+    <meta name="description" content="Exploring VuePress in easy words">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.dc7513a8.css" as="style"><link rel="preload" href="/assets/js/app.23d65a4c.js" as="script"><link rel="preload" href="/assets/js/3.fd6f9969.js" as="script"><link rel="prefetch" href="/assets/js/2.0a5ce835.js"><link rel="prefetch" href="/assets/js/0.eff315fb.js"><link rel="prefetch" href="/assets/js/1.ac924008.js"><link rel="prefetch" href="/assets/js/4.8d631bc5.js"><link rel="prefetch" href="/assets/js/5.3e32a4c3.js"><link rel="prefetch" href="/assets/js/6.6c469570.js"><link rel="prefetch" href="/assets/js/7.760abcbe.js"><link rel="prefetch" href="/assets/js/8.5bdcd7c2.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.dc7513a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      A Book of VuePress by VuePress
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link">Installation</a></div><div class="nav-item"><a href="/tools/" class="nav-link">Tools</a></div><div class="nav-item"><a href="/tasks/" class="nav-link router-link-active">Things We Can Do with VuePress</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link">Installation</a></div><div class="nav-item"><a href="/tools/" class="nav-link">Tools</a></div><div class="nav-item"><a href="/tasks/" class="nav-link router-link-active">Things We Can Do with VuePress</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Installation</span><!----></p><ul class="sidebar-group-items"><li><a href="/introduction/" class="sidebar-link">Installation</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Tools</span><!----></p><ul class="sidebar-group-items"><li><a href="/tools/" class="sidebar-link">Tools</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Things We Can Do with VuePress</span><!----></p><ul class="sidebar-group-items"><li><a href="/tasks/" class="sidebar-link">Things We Can Do with VuePress</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="things-we-can-do-with-vuepress"><a href="#things-we-can-do-with-vuepress" aria-hidden="true" class="header-anchor">#</a> Things We Can Do with VuePress</h1><p>In this section we will discuss some idea of what we can do using VuePress. It is some basic terms we will discuss about. So Let's get started</p><p></p><div class="table-of-contents"><ul><li><a href="#configuration">Configuration</a></li><li><a href="#handling-images">Handling images</a></li><li><a href="#links">Links</a></li><li><a href="#front-matter">Front Matter</a></li><li><a href="#navbar">NavBar</a></li><li><a href="#sidebar">SideBar</a></li></ul></div><p></p><h2 id="configuration"><a href="#configuration" aria-hidden="true" class="header-anchor">#</a> Configuration</h2><p>using config file</p><p>For configuring the file with specific title and description we can edit our config.js file. For that we have to create a folder named <strong>.vuepress</strong> inside the <strong> docs </strong> directory.
+then we can configure it as follows</p><div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  title: 'A Book of VuePress by VuePress',
+}
+</code></pre></div><p>As we have developed the site with VuePress so we are showing the exact codes we have used.</p><h2 id="handling-images"><a href="#handling-images" aria-hidden="true" class="header-anchor">#</a> Handling images</h2><p>You can place images by the following rules in markdown file.</p><div class="language- extra-class"><pre class="language-text"><code>![An image](./img.png)
+</code></pre></div><p>By this the image will be placed in the page where you need it.</p><h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a> Links</h2><p>Each Sub-Directory should have <strong> README.md </strong> file. To Create a link we need to define a path by adding <strong>/</strong>
+in front and back, Otherwise it will show error.</p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>/link/ should be like this not /link</p></div><h2 id="front-matter"><a href="#front-matter" aria-hidden="true" class="header-anchor">#</a> Front Matter</h2><p>Front Matter is also supported. We can write it as below</p><div class="language- extra-class"><pre class="language-text"><code>---
+home: true
+heroText: Hey Folks, It's about VuePress
+actionText: Let's Go →
+actionLink: /introduction/
+---
+</code></pre></div><div><ul><li>We have set the home to 'true' indicating that it is the home page. </li><li>heroText indicates a huge text showing what the site is about.</li><li>actionText shows a text is like a button indicating to go to the page we will define.</li><li>actionLink guides us to the definite page. </li></ul></div>
+you can alo add <strong> heroImage </strong> which shows a image at the center of homepage of a site.
+```
+---
+heroImage: image.png
+---
+```
+## Table of contents
+As in the pages you have been through you have seen a table of content so that you can jump to a section of your choice. You can write it in your markdown file as follows
+```
+[[toc]]
+```
+## Custom Containers
+No you can add tips, warning, danger on the go as following code
+<div class="language- extra-class"><pre class="language-text"><code>::: tip
+Follow This Tip
+:::
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>::: warning
+It's a warning
+:::
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>Follow this tip</p></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>It's a warning</p></div><h2 id="navbar"><a href="#navbar" aria-hidden="true" class="header-anchor">#</a> NavBar</h2><p>As In this site you can see that there is a navigating bar in the top right, so that you can access page on the go. It is done by writing the following code in config.js. <br></p><div class="language- extra-class"><pre class="language-text"><code>    themeConfig:{
+        nav: [
+            { text: 'COUNTER', link: '/counter/' },
+            { text: 'GUIDE', link: '/guide/' },
+        ],
+}
+</code></pre></div><p>You can disable navbar globally in config.js using</p><div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  themeConfig: {
+    navbar: false
+  }
+  }
+
+# Or Only in a single page
+---
+navbar: false
+---
+</code></pre></div><h2 id="sidebar"><a href="#sidebar" aria-hidden="true" class="header-anchor">#</a> SideBar</h2><p>As you can see the Sidebar in this page, This is the way we can add it</p><div class="language- extra-class"><pre class="language-text"><code>     sidebar: [
+            {
+                title: 'Installation',
+                collapsable: false,
+                children: [
+                    '/introduction/'
+                ]
+            },
+            {
+                title: 'Things You Can Do',
+                collapsable: false,
+                children: [
+                    '/tasks/'
+                ]
+            }
+        ]
+</code></pre></div><p>That's it for today.</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/3.fd6f9969.js" defer></script><script src="/assets/js/app.23d65a4c.js" defer></script>
+  </body>
+</html>

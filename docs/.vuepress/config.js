@@ -1,6 +1,7 @@
 module.exports = {
     title: 'A Book of VuePress by VuePress',
     description: 'Exploring VuePress in easy words',
+	base:"/test2/",
     themeConfig: {
         nav: [
             {text: 'Installation', link: '/introduction/'},
